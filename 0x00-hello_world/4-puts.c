@@ -1,11 +1,11 @@
-#include<stdio.h>
-{
+#include<stdio>
 /**
- * main - Entry point
+ *main - Entry point
  *
- * Return: Always 0 (Success)
+ *return: Always 0 (success)
  */
 int main(void)
-	puts("Programming is like building a multilingual puzzle");
+{
+	puts("programming is like building a multiligual puzzle");
 	return (0);
 }
