@@ -1,4 +1,3 @@
-
 /**
  * _strncat - concatenate two strings
  * using at most n bytes from src
@@ -9,20 +8,17 @@
  * Return: dest
  */
 
-
 #include <stdio.h>
 #include <string.h>
 #include <main.h>
 
 int main() {
-	char dest[20] = "Hello ";
-	char src[] ="everyone";
-	strcat(dest,src);
+    char str1[20] = "Hello";
+    char str2[] = " world!";
+    _strcat(str1, str2);  /*concatenate str2 to the end of str1*/
+    for(int i = 0; str1[i] != '\0'; ++i) {
+	    putchar(str1[i]); /* output the concatenated string*/
+    }
 
-	for(int i=0; dest[i]!='\0'; ++i) {
-		putchar(dest[i]);
-	}
-		putchar('\n');
-
-	return 0;
+    return 0;
 }
