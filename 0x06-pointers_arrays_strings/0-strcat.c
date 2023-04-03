@@ -12,13 +12,27 @@
 #include <string.h>
 #include <main.h>
 
-int main() {
-    char str1[20] = "Hello";
-    char str2[] = " world!";
-    _strcat(str1, str2);  /*concatenate str2 to the end of str1*/
-    for(int i = 0; str1[i] != '\0'; ++i) {
-	    putchar(str1[i]); /* output the concatenated string*/
-    }
 
-    return 0;
+char *_strcat(char *dest, char *src)
+{
+	int i;
+	int g;
+
+	i = 0;
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	g = 0;
+	while (src[g] != '\0')
+	{
+		dest[i] = src[g];
+		i++;
+		g++;
+	}
+	dest[i] = '\0';
+
+
+	return (dest);
+
 }
